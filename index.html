@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>
+		jQueryDash
+	</title>
+	<script src="lib/core/jquery.min.js"></script>
+	<script src="lib/core/jquery-ui.min.js"></script>
+
+	<script src="lib/plugins/jquery.storageapi.min.js"></script>
+
+
+	<script src="lib/panels/jquery.panel.js"></script>
+
+	<link rel="stylesheet" href="ui/css/app.css" />
+	<script>
+		$( function ()
+		{
+			"use strict";
+
+			$( 'div#container' ).append( $( '<div>', {'text': 'hi'} ).panel() );
+		} );
+	</script>
+</head>
+<body>
+<div id="container" class="manage"></div>
+</body>
+</html>
