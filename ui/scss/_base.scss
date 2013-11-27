@@ -25,6 +25,7 @@ body {
 		right: 0px;
 		top: 0px;
 		border-bottom-left-radius: 3px;
+		display: none;
 	}
 
 }
@@ -39,4 +40,8 @@ body {
 	border: 1px solid $light1;
 	border-left: 0;
 	background-image: url('../images/grid.png');
+
+	.add-panel {
+		display: block;
+	}
 }
