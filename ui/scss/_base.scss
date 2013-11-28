@@ -8,6 +8,7 @@ body {
 	padding: 2px 5px 2px 5px;
 	cursor: pointer;
 	background-color: $light1;
+	border: 1px solid $light1;
 
 	&:hover {
 		background-color: $dark2;
@@ -28,6 +29,10 @@ body {
 		display: none;
 	}
 
+	&.view-panels {
+		display: none;
+	}
+
 }
 
 #container {
@@ -41,7 +46,11 @@ body {
 	border-left: 0;
 	background-image: url('../images/grid.png');
 
-	.add-panel {
-		display: block;
+	.add-panel, .view-panels {
+		display: inline-block;
+	}
+
+	.edit-panels {
+		display: none;
 	}
 }
