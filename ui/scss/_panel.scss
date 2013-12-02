@@ -3,6 +3,15 @@ div.panel {
 	background-color: $dark1;
 	border-radius: 5px;
 
+	a.move-panel {
+		font-size: 60px;
+		line-height: 17px;
+		cursor: move;
+		height: 28px;
+		overflow: hidden;
+		display: inline-block;
+	}
+
 	/** jQuery UI Resizable */
 	&.ui-resizable {
 
