@@ -1,9 +1,13 @@
 @import 'vars';
 
 div.panel {
-	border: 2px solid $light1;
+	box-shadow: 0 0 1px 1px $light1 inset;
 	background-color: $dark1;
 	border-radius: 5px;
+
+	>div.content {
+		margin: 4px;
+	}
 
 	a.move-panel {
 		font-size: 60px;
