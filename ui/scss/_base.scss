@@ -1,13 +1,21 @@
+@import 'vars';
+
 body {
 	padding: 0;
 	background-color: $dark2;
 	font-family: sans-serif;
+	color: $light1;
 }
 
 .button {
 	padding: 2px 5px 2px 5px;
 	cursor: pointer;
 	background-color: $light1;
+	border: 1px solid $light1;
+	color: $dark1;
+	min-width: 14px;
+	min-height: 16px;
+	text-align: center;
 
 	&:hover {
 		background-color: $dark2;
@@ -22,9 +30,26 @@ body {
 
 	&.add-panel {
 		position: fixed;
-		right: 0px;
-		top: 0px;
+		right: 25px;
+		top: 0;
 		border-bottom-left-radius: 3px;
+		display: none;
+		z-index: 2;
+	}
+
+	&.edit-panels {
+		position: fixed;
+		right: 0;
+		top: 0;
+		border-bottom-left-radius: 3px;
+	}
+
+	&.view-panels {
+		display: none;
+		position: fixed;
+		right: 0;
+		top: 0;
+		z-index: 2;
 	}
 
 }
@@ -39,4 +64,12 @@ body {
 	border: 1px solid $light1;
 	border-left: 0;
 	background-image: url('../images/grid.png');
+
+	.add-panel, .view-panels {
+		display: inline-block;
+	}
+
+	.edit-panels {
+		display: none;
+	}
 }

@@ -1,7 +1,22 @@
+@import 'vars';
+
 div.panel {
-	border: 2px solid $light1;
+	box-shadow: 0 0 1px 1px $light1 inset;
 	background-color: $dark1;
 	border-radius: 5px;
+
+	>div.content {
+		margin: 4px;
+	}
+
+	a.move-panel {
+		font-size: 60px;
+		line-height: 17px;
+		cursor: move;
+		height: 28px;
+		overflow: hidden;
+		display: inline-block;
+	}
 
 	/** jQuery UI Resizable */
 	&.ui-resizable {
@@ -10,6 +25,14 @@ div.panel {
 			position: absolute;
 			font-size: 0px;
 			display: block;
+
+			&.ui-resizable-n {
+				cursor: n-resize;
+				height: 7px;
+				width: 100%;
+				top: -5px;
+				left: 0;
+			}
 
 			&.ui-resizable-s {
 				cursor: s-resize;
@@ -27,12 +50,35 @@ div.panel {
 				height: 100%;
 			}
 
+			&.ui-resizable-w {
+				cursor: w-resize;
+				width: 7px;
+				left: -5px;
+				top: 0;
+				height: 100%;
+			}
+
 			&.ui-resizable-se {
 				cursor: se-resize;
 				width: 12px;
 				height: 12px;
 				right: 1px;
 				bottom: 1px;
+			}
+			&.ui-resizable-sw {
+				cursor: sw-resize;
+				width: 9px;
+				height: 9px;
+				left: -5px;
+				bottom: -5px;
+			}
+
+			&.ui-resizable-nw {
+				cursor: nw-resize;
+				width: 9px;
+				height: 9px;
+				left: -5px;
+				top: -5px;
 			}
 		}
 	}
