@@ -82,4 +82,10 @@ div.panel {
 			}
 		}
 	}
+
+	&.plainTextPanel {
+		>div.content {
+			white-space: pre-wrap;
+		}
+	}
 }
