@@ -7,6 +7,8 @@ div.panel {
 
 	>div.content {
 		margin: 4px;
+		height: inherit;
+		overflow: hidden;
 	}
 
 	a.move-panel {
@@ -16,6 +18,9 @@ div.panel {
 		height: 28px;
 		overflow: hidden;
 		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
 	}
 
 	/** jQuery UI Resizable */
