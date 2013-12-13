@@ -1,9 +1,12 @@
 @import 'vars';
 
+html {
+	font-family: sans-serif;
+}
+
 body {
 	padding: 0;
 	background-color: $dark2;
-	font-family: sans-serif;
 	color: $light1;
 }
 
@@ -24,6 +27,7 @@ body {
 
 	&.delete-panel {
 		border-bottom-left-radius: 3px;
+		border-top-right-radius: 3px;
 		position: absolute;
 		right: 0;
 	}
