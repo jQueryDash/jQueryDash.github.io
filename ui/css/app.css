@@ -38,14 +38,14 @@ div.panel.ui-resizable .ui-resizable-handle.ui-resizable-nw { cursor: nw-resize;
 .fButton, .button, .ui-dialog .ui-dialog-titlebar-close, .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button { cursor: pointer; padding: 2px 5px 2px 5px; background-color: #6a6a6a; border: 1px solid #6a6a6a; color: #222222; font-weight: bold; text-align: center; }
 .fButton:hover, .button:hover, .ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button:hover { background-color: #2c2c2c; color: #6a6a6a; }
 
-.ui-dialog { position: absolute; top: 0; left: 0; padding: .2em; padding-bottom: 0px; outline: 0; background-color: #222222; border: 2px solid #2c2c2c; border-radius: 3; }
+.ui-dialog { position: absolute; top: 0; left: 0; padding: .2em; padding-bottom: 0px; outline: 0; background-color: #222222; border: 1px solid #6a6a6a; border-radius: 3; }
 .ui-dialog .ui-dialog-titlebar { padding: .4em 1em; position: relative; }
 .ui-dialog .ui-dialog-title { margin: .1em 0; white-space: nowrap; width: 90%; overflow: hidden; text-overflow: ellipsis; }
-.ui-dialog .ui-dialog-titlebar-close { position: absolute; right: -5px; top: -5px; width: 25px; height: 25px; border-bottom-left-radius: 3px; border-top-right-radius: 3px; }
+.ui-dialog .ui-dialog-titlebar-close { position: absolute; right: -4px; top: -4px; width: 25px; height: 25px; border-bottom-left-radius: 3px; border-top-right-radius: 3px; }
 .ui-dialog .ui-dialog-titlebar-close span { display: none; }
 .ui-dialog .ui-dialog-titlebar-close:after { content: 'X'; }
 .ui-dialog .ui-dialog-buttonpane { border-width: 1px 0 0 0; background-image: none; margin-top: 10px; text-align: center; }
-.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button { margin: 0; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom: 0; }
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button { margin: 0; border-top-left-radius: 3px; border-top-right-radius: 3px; }
 .ui-dialog .ui-resizable-se { width: 12px; height: 12px; right: -5px; bottom: -5px; background-position: 16px 16px; }
 
 .ui-draggable .ui-dialog-titlebar { cursor: move; }

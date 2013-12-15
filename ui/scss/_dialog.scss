@@ -8,7 +8,7 @@
 	padding-bottom: 0px;
 	outline: 0;
 	background-color: $dark1;
-	border: 2px solid $dark2;
+	border: 1px solid $light1;
 	border-radius: 3;
 
 	.ui-dialog-titlebar {
@@ -25,8 +25,8 @@
 	.ui-dialog-titlebar-close {
 		@extend .fButton;
 		position: absolute;
-		right: -5px;
-		top: -5px;
+		right: -4px;
+		top: -4px;
 		width: 25px;
 		height: 25px;
 		border-bottom-left-radius: 3px;
@@ -51,11 +51,10 @@
 		text-align: center;
 
 		.ui-dialog-buttonset button {
-				@extend .fButton;
-				margin: 0;
-				border-top-left-radius: 3px;
-				border-top-right-radius: 3px;
-				border-bottom: 0;
+			@extend .fButton;
+			margin: 0;
+			border-top-left-radius: 3px;
+			border-top-right-radius: 3px;
 		}
 	}
 	.ui-resizable-se {
