@@ -24,7 +24,7 @@ body {
 
 	&.add-panel {
 		position: fixed;
-		right: 25px;
+		right: 50px;
 		top: 0;
 		border-bottom-left-radius: 3px;
 		display: none;
@@ -46,6 +46,15 @@ body {
 		z-index: 2;
 	}
 
+	&.settings {
+		display: none;
+		position: fixed;
+		right: 25px;
+		height: 18px;
+		top: 0;
+		z-index: 2;
+	}
+
 }
 
 #container {
@@ -59,7 +68,7 @@ body {
 	border-left: 0;
 	background-image: url('../images/grid.png');
 
-	.add-panel, .view-panels {
+	.add-panel, .view-panels, .settings {
 		display: inline-block;
 	}
 
