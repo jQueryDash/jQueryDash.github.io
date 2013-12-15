@@ -1,10 +1,12 @@
 /** Colours */
+.fButton, .button, .ui-dialog .ui-dialog-titlebar-close, .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button { cursor: pointer; padding: 2px 5px 2px 5px; background-color: #6a6a6a; border: 1px solid #6a6a6a; color: #222222; font-weight: bold; text-align: center; }
+.fButton:hover, .button:hover, .ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button:hover { background-color: #2c2c2c; color: #6a6a6a; }
+
 html { font-family: sans-serif; }
 
 body { padding: 0; background-color: #2c2c2c; color: #6a6a6a; }
 
-.button { padding: 2px 5px 2px 5px; cursor: pointer; background-color: #6a6a6a; border: 1px solid #6a6a6a; color: #222222; min-width: 14px; min-height: 16px; text-align: center; }
-.button:hover { background-color: #2c2c2c; color: #6a6a6a; }
+.button { min-width: 14px; min-height: 16px; }
 .button.delete-panel { border-bottom-left-radius: 3px; border-top-right-radius: 3px; position: absolute; right: 0; }
 .button.add-panel { position: fixed; right: 25px; top: 0; border-bottom-left-radius: 3px; display: none; z-index: 2; }
 .button.edit-panels { position: fixed; right: 0; top: 0; border-bottom-left-radius: 3px; }
@@ -17,6 +19,9 @@ body { padding: 0; background-color: #2c2c2c; color: #6a6a6a; }
 #container.manage .edit-panels { display: none; }
 
 /** Colours */
+.fButton, .button, .ui-dialog .ui-dialog-titlebar-close, .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button { cursor: pointer; padding: 2px 5px 2px 5px; background-color: #6a6a6a; border: 1px solid #6a6a6a; color: #222222; font-weight: bold; text-align: center; }
+.fButton:hover, .button:hover, .ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button:hover { background-color: #2c2c2c; color: #6a6a6a; }
+
 div.panel { box-shadow: 0 0 1px 1px #6a6a6a inset; background-color: #222222; border-radius: 5px; /** jQuery UI Resizable */ }
 div.panel > div.content { margin: 4px; }
 div.panel a.move-panel { font-size: 60px; line-height: 17px; cursor: move; height: 28px; overflow: hidden; display: inline-block; }
@@ -30,15 +35,17 @@ div.panel.ui-resizable .ui-resizable-handle.ui-resizable-sw { cursor: sw-resize;
 div.panel.ui-resizable .ui-resizable-handle.ui-resizable-nw { cursor: nw-resize; width: 9px; height: 9px; left: -5px; top: -5px; }
 
 /** Colours */
-.ui-dialog { position: absolute; top: 0; left: 0; padding: .2em; outline: 0; background-color: #222222; border: 2px solid #2c2c2c; border-radius: 3; }
+.fButton, .button, .ui-dialog .ui-dialog-titlebar-close, .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button { cursor: pointer; padding: 2px 5px 2px 5px; background-color: #6a6a6a; border: 1px solid #6a6a6a; color: #222222; font-weight: bold; text-align: center; }
+.fButton:hover, .button:hover, .ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button:hover { background-color: #2c2c2c; color: #6a6a6a; }
+
+.ui-dialog { position: absolute; top: 0; left: 0; padding: .2em; padding-bottom: 0px; outline: 0; background-color: #222222; border: 2px solid #2c2c2c; border-radius: 3; }
 .ui-dialog .ui-dialog-titlebar { padding: .4em 1em; position: relative; }
 .ui-dialog .ui-dialog-title { margin: .1em 0; white-space: nowrap; width: 90%; overflow: hidden; text-overflow: ellipsis; }
-.ui-dialog .ui-dialog-titlebar-close { position: absolute; right: -5px; top: -5px; width: 25px; height: 25px; font-weight: bold; padding: 2px 5px 2px 5px; cursor: pointer; background-color: #6a6a6a; border: 1px solid #6a6a6a; color: #222222; text-align: center; border-bottom-left-radius: 3px; border-top-right-radius: 3px; }
+.ui-dialog .ui-dialog-titlebar-close { position: absolute; right: -5px; top: -5px; width: 25px; height: 25px; border-bottom-left-radius: 3px; border-top-right-radius: 3px; }
 .ui-dialog .ui-dialog-titlebar-close span { display: none; }
-.ui-dialog .ui-dialog-titlebar-close:hover { background-color: #2c2c2c; color: #6a6a6a; }
 .ui-dialog .ui-dialog-titlebar-close:after { content: 'X'; }
-.ui-dialog .ui-dialog-buttonpane { text-align: left; border-width: 1px 0 0 0; background-image: none; margin-top: .5em; padding: .3em 1em .5em .4em; text-align: center; }
-.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button { margin: .5em .4em .5em 0; cursor: pointer; }
+.ui-dialog .ui-dialog-buttonpane { border-width: 1px 0 0 0; background-image: none; margin-top: 10px; text-align: center; }
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button { margin: 0; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom: 0; }
 .ui-dialog .ui-resizable-se { width: 12px; height: 12px; right: -5px; bottom: -5px; background-position: 16px 16px; }
 
 .ui-draggable .ui-dialog-titlebar { cursor: move; }

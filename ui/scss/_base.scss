@@ -11,19 +11,9 @@ body {
 }
 
 .button {
-	padding: 2px 5px 2px 5px;
-	cursor: pointer;
-	background-color: $light1;
-	border: 1px solid $light1;
-	color: $dark1;
+	@extend .fButton;
 	min-width: 14px;
 	min-height: 16px;
-	text-align: center;
-
-	&:hover {
-		background-color: $dark2;
-		color: $light1;
-	}
 
 	&.delete-panel {
 		border-bottom-left-radius: 3px;

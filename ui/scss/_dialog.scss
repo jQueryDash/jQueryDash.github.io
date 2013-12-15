@@ -5,6 +5,7 @@
 	top: 0;
 	left: 0;
 	padding: .2em;
+	padding-bottom: 0px;
 	outline: 0;
 	background-color: $dark1;
 	border: 2px solid $dark2;
@@ -22,30 +23,17 @@
 		text-overflow: ellipsis;
 	}
 	.ui-dialog-titlebar-close {
+		@extend .fButton;
 		position: absolute;
 		right: -5px;
 		top: -5px;
 		width: 25px;
 		height: 25px;
-
-		font-weight: bold;
-
-		padding: 2px 5px 2px 5px;
-		cursor: pointer;
-		background-color: $light1;
-		border: 1px solid $light1;
-		color: $dark1;
-		text-align: center;
 		border-bottom-left-radius: 3px;
 		border-top-right-radius: 3px;
 
 		span {
 			display: none;
-		}
-
-		&:hover {
-			background-color: $dark2;
-			color: $light1;
 		}
 	}
 	.ui-dialog-titlebar-close:after {
@@ -56,18 +44,18 @@
 
 	}
 	.ui-dialog-buttonpane {
-		text-align: left;
 		border-width: 1px 0 0 0;
 		background-image: none;
-		margin-top: .5em;
-		padding: .3em 1em .5em .4em;
+		margin-top: 10px;
+
 		text-align: center;
 
-		.ui-dialog-buttonset {
-			button {
-				margin: .5em .4em .5em 0;
-				cursor: pointer;
-			}
+		.ui-dialog-buttonset button {
+				@extend .fButton;
+				margin: 0;
+				border-top-left-radius: 3px;
+				border-top-right-radius: 3px;
+				border-bottom: 0;
 		}
 	}
 	.ui-resizable-se {
