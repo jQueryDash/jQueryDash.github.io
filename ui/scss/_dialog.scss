@@ -23,7 +23,7 @@
 		text-overflow: ellipsis;
 	}
 	.ui-dialog-titlebar-close {
-		@extend .fButton;
+		@extend button;
 		position: absolute;
 		right: -4px;
 		top: -4px;
@@ -43,7 +43,12 @@
 	.ui-dialog-content {
 
 		label {
+			padding-left: 20px;
 			display: block;
+			input, button {
+				width: 200px;
+				margin-left: 50px;
+			}
 		}
 
 	}
@@ -55,7 +60,7 @@
 		text-align: center;
 
 		.ui-dialog-buttonset button {
-			@extend .fButton;
+			@extend button;
 			margin: 0;
 			border-top-left-radius: 3px;
 			border-top-right-radius: 3px;

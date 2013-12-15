@@ -11,7 +11,7 @@ body {
 }
 
 .button {
-	@extend .fButton;
+	@extend button;
 	min-width: 14px;
 	min-height: 16px;
 
@@ -54,7 +54,6 @@ body {
 		top: 0;
 		z-index: 2;
 	}
-
 }
 
 #container {
@@ -74,5 +73,20 @@ body {
 
 	.edit-panels {
 		display: none;
+	}
+}
+
+.mega-warning{
+	color:#ffaaaa;
+	background-color: #dd0000;
+	border-color: #ff0000;
+	display: block;
+	padding: 10px;
+	width: 96%;
+	margin: 2%;
+	&:hover {
+		color:#ffffff;
+		background-color: #ff0000;
+		border-color: #dd0000;
 	}
 }
