@@ -37,6 +37,7 @@ div.panel.ui-resizable .ui-resizable-handle.ui-resizable-w { cursor: w-resize; w
 div.panel.ui-resizable .ui-resizable-handle.ui-resizable-se { cursor: se-resize; width: 12px; height: 12px; right: 1px; bottom: 1px; }
 div.panel.ui-resizable .ui-resizable-handle.ui-resizable-sw { cursor: sw-resize; width: 9px; height: 9px; left: -5px; bottom: -5px; }
 div.panel.ui-resizable .ui-resizable-handle.ui-resizable-nw { cursor: nw-resize; width: 9px; height: 9px; left: -5px; top: -5px; }
+div.panel .clock { margin-left: auto; margin-right: auto; text-align: center; }
 
 /** Colours */
 button, .button, .ui-dialog .ui-dialog-titlebar-close, .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button { cursor: pointer; padding: 2px 5px 2px 5px; background-color: #6a6a6a; border: 1px solid #6a6a6a; color: #222222; font-weight: bold; text-align: center; }
