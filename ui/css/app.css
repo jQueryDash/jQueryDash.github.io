@@ -27,7 +27,12 @@ button, .button, .ui-dialog .ui-dialog-titlebar-close, .ui-dialog .ui-dialog-but
 button:hover, .button:hover, .ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button:hover { background-color: #2c2c2c; color: #6a6a6a; }
 
 div.panel { box-shadow: 0 0 1px 1px #6a6a6a inset; background-color: #222222; border-radius: 5px; /** jQuery UI Resizable */ }
+div.panel.slides { overflow: hidden; }
+div.panel.slides .slide img { max-width: 50%; margin-left: auto; margin-right: auto; display: block; height: auto; }
+div.panel.slides .slide .title { padding: 3px; text-align: center; font-weight: bold; }
+div.panel.slides .slide .title a { color: #6a6a6a; }
 div.panel > div.content { margin: 4px; }
+div.panel > div.content .slide { float: left; }
 div.panel a.move-panel { font-size: 60px; line-height: 17px; cursor: move; height: 28px; overflow: hidden; display: inline-block; }
 div.panel.ui-resizable .ui-resizable-handle { position: absolute; font-size: 0px; display: block; }
 div.panel.ui-resizable .ui-resizable-handle.ui-resizable-n { cursor: n-resize; height: 7px; width: 100%; top: -5px; left: 0; }
