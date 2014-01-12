@@ -20,6 +20,7 @@ body {
 		border-top-right-radius: 3px;
 		position: absolute;
 		right: 0;
+		top: 0;
 	}
 
 	&.add-panel {
@@ -73,6 +74,34 @@ body {
 
 	.edit-panels {
 		display: none;
+	}
+
+	#editControls {
+		position: absolute;
+		width: 100%;
+		text-align: center;
+		padding: 5px;
+		margin: 5px;
+
+		a:link {
+			text-decoration: none;
+		}
+		a:visited {
+			text-decoration: none;
+		}
+		a:hover {
+			text-decoration: none;
+		}
+		a:active {
+			text-decoration: none;
+		}
+		a {
+			color: black;
+			padding: 5px;
+			border: 1px solid silver;
+			border-radius: 5px;
+			width: 1em;
+		}
 	}
 }
 
