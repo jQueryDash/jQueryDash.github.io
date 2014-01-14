@@ -54,7 +54,7 @@ div.panel.edit > div.content label { display: block; clear: both; width: 95%; ma
 div.panel.edit > div.content label select, div.panel.edit > div.content label input { float: right; width: 45%; }
 div.panel .clock { margin-left: auto; margin-right: auto; text-align: center; }
 div.panel.plainTextPanel > div.content { white-space: pre-wrap; }
-div.panel.rssMediaPanel .slide img { height: 100%; max-height: 98%; max-width: 98%; margin: auto; display: block; }
+div.panel.rssMediaPanel .slide img { height: 98%; max-height: 98%; max-width: 98%; margin: auto; display: block; }
 
 /** Colours */
 button, .button, .ui-dialog .ui-dialog-titlebar-close, .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button { cursor: pointer; padding: 2px 5px 2px 5px; background-color: #6a6a6a; border: 1px solid #6a6a6a; color: #222222; font-weight: bold; text-align: center; }
