@@ -1,36 +1,31 @@
 @import 'vars';
 
+html {
+	font-family: sans-serif;
+}
+
 body {
 	padding: 0;
 	background-color: $dark2;
-	font-family: sans-serif;
 	color: $light1;
 }
 
 .button {
-	padding: 2px 5px 2px 5px;
-	cursor: pointer;
-	background-color: $light1;
-	border: 1px solid $light1;
-	color: $dark1;
+	@extend button;
 	min-width: 14px;
 	min-height: 16px;
-	text-align: center;
-
-	&:hover {
-		background-color: $dark2;
-		color: $light1;
-	}
 
 	&.delete-panel {
 		border-bottom-left-radius: 3px;
+		border-top-right-radius: 3px;
 		position: absolute;
 		right: 0;
+		top: 0;
 	}
 
 	&.add-panel {
 		position: fixed;
-		right: 25px;
+		right: 50px;
 		top: 0;
 		border-bottom-left-radius: 3px;
 		display: none;
@@ -52,6 +47,14 @@ body {
 		z-index: 2;
 	}
 
+	&.settings {
+		display: none;
+		position: fixed;
+		right: 25px;
+		height: 18px;
+		top: 0;
+		z-index: 2;
+	}
 }
 
 #container {
@@ -65,11 +68,54 @@ body {
 	border-left: 0;
 	background-image: url('../images/grid.png');
 
-	.add-panel, .view-panels {
+	.add-panel, .view-panels, .settings {
 		display: inline-block;
 	}
 
 	.edit-panels {
 		display: none;
+	}
+
+	#editControls {
+		position: absolute;
+		width: 100%;
+		text-align: center;
+		padding: 5px;
+		margin: 5px;
+
+		a:link {
+			text-decoration: none;
+		}
+		a:visited {
+			text-decoration: none;
+		}
+		a:hover {
+			text-decoration: none;
+		}
+		a:active {
+			text-decoration: none;
+		}
+		a {
+			color: black;
+			padding: 5px;
+			border: 1px solid silver;
+			border-radius: 5px;
+			width: 1em;
+		}
+	}
+}
+
+.mega-warning{
+	color:#ffaaaa;
+	background-color: #dd0000;
+	border-color: #ff0000;
+	display: block;
+	padding: 10px;
+	width: 96%;
+	margin: 2%;
+	&:hover {
+		color:#ffffff;
+		background-color: #ff0000;
+		border-color: #dd0000;
 	}
 }

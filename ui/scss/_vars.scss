@@ -1,4 +1,19 @@
-/** Colors */
+/** Colours */
 $dark1: #222222;
 $dark2: #2c2c2c;
 $light1: #6a6a6a;
+
+button {
+	cursor: pointer;
+	padding: 2px 5px 2px 5px;
+	background-color: $light1;
+	border: 1px solid $light1;
+	color: $dark1;
+	font-weight: bold;
+	text-align: center;
+
+	&:hover {
+		background-color: $dark2;
+		color: $light1;
+	}
+}
