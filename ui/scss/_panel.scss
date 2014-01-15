@@ -115,14 +115,9 @@ div.panel {
 		}
 	}
 
-	&.plainTextPanel {
-		>div.content {
-			white-space: pre-wrap;
-		}
-	}
 	&.edit>div.content {
 		height: 90%;
-		overflow: scroll;
+		overflow: auto;
 		label:first-child {
 			padding-top: 20px;
 		}

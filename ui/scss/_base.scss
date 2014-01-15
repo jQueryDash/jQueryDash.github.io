@@ -82,6 +82,7 @@ body {
 		text-align: center;
 		padding: 5px;
 		margin: 5px;
+		z-index: 10000;
 
 		a:link {
 			text-decoration: none;
@@ -96,7 +97,8 @@ body {
 			text-decoration: none;
 		}
 		a {
-			color: black;
+			color: silver;
+			background-color: black;
 			padding: 5px;
 			border: 1px solid silver;
 			border-radius: 5px;

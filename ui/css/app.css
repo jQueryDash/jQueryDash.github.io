@@ -18,12 +18,12 @@ body { padding: 0; background-color: #2c2c2c; color: #6a6a6a; }
 #container.manage { border: 1px solid #6a6a6a; border-left: 0; background-image: url("../images/grid.png"); }
 #container.manage .add-panel, #container.manage .view-panels, #container.manage .settings { display: inline-block; }
 #container.manage .edit-panels { display: none; }
-#container.manage #editControls { position: absolute; width: 100%; text-align: center; padding: 5px; margin: 5px; }
+#container.manage #editControls { position: absolute; width: 100%; text-align: center; padding: 5px; margin: 5px; z-index: 10000; }
 #container.manage #editControls a:link { text-decoration: none; }
 #container.manage #editControls a:visited { text-decoration: none; }
 #container.manage #editControls a:hover { text-decoration: none; }
 #container.manage #editControls a:active { text-decoration: none; }
-#container.manage #editControls a { color: black; padding: 5px; border: 1px solid silver; border-radius: 5px; width: 1em; }
+#container.manage #editControls a { color: silver; background-color: black; padding: 5px; border: 1px solid silver; border-radius: 5px; width: 1em; }
 
 .mega-warning { color: #ffaaaa; background-color: #dd0000; border-color: #ff0000; display: block; padding: 10px; width: 96%; margin: 2%; }
 .mega-warning:hover { color: #ffffff; background-color: #ff0000; border-color: #dd0000; }
@@ -48,7 +48,7 @@ div.panel.ui-resizable .ui-resizable-handle.ui-resizable-w { cursor: w-resize; w
 div.panel.ui-resizable .ui-resizable-handle.ui-resizable-se { cursor: se-resize; width: 12px; height: 12px; right: 1px; bottom: 1px; }
 div.panel.ui-resizable .ui-resizable-handle.ui-resizable-sw { cursor: sw-resize; width: 9px; height: 9px; left: -5px; bottom: -5px; }
 div.panel.ui-resizable .ui-resizable-handle.ui-resizable-nw { cursor: nw-resize; width: 9px; height: 9px; left: -5px; top: -5px; }
-div.panel.edit > div.content { height: 90%; overflow: scroll; }
+div.panel.edit > div.content { height: 90%; overflow: auto; }
 div.panel.edit > div.content label:first-child { padding-top: 20px; }
 div.panel.edit > div.content label { display: block; clear: both; width: 95%; margin-left: auto; margin-right: auto; }
 div.panel.edit > div.content label select, div.panel.edit > div.content label input { float: right; width: 45%; }
