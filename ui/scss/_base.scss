@@ -10,8 +10,14 @@ body {
 	color: $light1;
 }
 
+.above-all-overlay {
+	z-index: 4;
+}
+.above-all {
+	z-index: 3;
+}
 .above-panels {
-	z-index: 10;
+	z-index: 2;
 }
 
 .button {
