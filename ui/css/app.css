@@ -6,7 +6,11 @@ html { font-family: sans-serif; }
 
 body { padding: 0; background-color: #2c2c2c; color: #6a6a6a; }
 
-.above-panels { z-index: 10; }
+.above-all-overlay { z-index: 4; }
+
+.above-all { z-index: 3; }
+
+.above-panels { z-index: 2; }
 
 .button { min-width: 14px; min-height: 16px; }
 .button.delete-panel { border-bottom-left-radius: 3px; border-top-right-radius: 3px; position: absolute; right: 0; top: 0; }
