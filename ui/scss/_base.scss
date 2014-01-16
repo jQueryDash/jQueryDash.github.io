@@ -10,6 +10,10 @@ body {
 	color: $light1;
 }
 
+.above-panels {
+	z-index: 10;
+}
+
 .button {
 	@extend button;
 	min-width: 14px;
@@ -29,7 +33,6 @@ body {
 		top: 0;
 		border-bottom-left-radius: 3px;
 		display: none;
-		z-index: 2;
 	}
 
 	&.edit-panels {
@@ -44,7 +47,6 @@ body {
 		position: fixed;
 		right: 0;
 		top: 0;
-		z-index: 2;
 	}
 
 	&.settings {
@@ -53,7 +55,6 @@ body {
 		right: 25px;
 		height: 18px;
 		top: 0;
-		z-index: 2;
 	}
 }
 
