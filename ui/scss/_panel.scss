@@ -147,6 +147,28 @@ div.panel {
 			white-space: pre-wrap;
 		}
 	}
+	
+	&.statusPanel {
+		.status {
+			text-align: center;
+			font-size: 60px;
+		}
+		&.ok .status:after {
+			content: '\25B2';
+			color: #80bf40;
+		}
+		&.warning .status:after {
+			content: '\25BC';
+			color: #bf9f40;
+		}
+		&.error .status:after {
+			content: '\25BC';
+			color: #bf4040;
+		}
+		&.unknown .status:after {
+			content: '?';
+		}
+	}
 
 	&.rssMediaPanel .slide img {
 		height: 98%;

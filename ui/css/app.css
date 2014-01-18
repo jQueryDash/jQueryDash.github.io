@@ -39,10 +39,10 @@ button, .button, .ui-dialog .ui-dialog-titlebar-close, .ui-dialog .ui-dialog-but
 button:hover, .button:hover, .ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button:hover { background-color: #2c2c2c; color: #6a6a6a; }
 
 div.panel { box-shadow: 0 0 1px 1px #6a6a6a inset; background-color: #222222; border-radius: 5px; /** jQuery UI Resizable */ }
+div.panel .title { padding: 3px; text-align: center; font-weight: bold; }
+div.panel .title a { color: #6a6a6a; }
 div.panel.slides { overflow: hidden; }
 div.panel.slides .slide img { max-height: 50%; margin-left: auto; margin-right: auto; display: block; height: auto; }
-div.panel.slides .slide .title { padding: 3px; text-align: center; font-weight: bold; }
-div.panel.slides .slide .title a { color: #6a6a6a; }
 div.panel > div.content { margin: 4px; height: inherit; overflow: hidden; }
 div.panel > div.content .slide { float: left; }
 div.panel a.move-panel { font-size: 60px; line-height: 17px; cursor: move; height: 28px; overflow: hidden; display: inline-block; position: absolute; top: 0; left: 0; }
@@ -60,6 +60,11 @@ div.panel.edit > div.content label { display: block; clear: both; width: 95%; ma
 div.panel.edit > div.content label select, div.panel.edit > div.content label input { float: right; width: 45%; }
 div.panel .clock { margin-left: auto; margin-right: auto; text-align: center; }
 div.panel.plainTextPanel > div.content { white-space: pre-wrap; }
+div.panel.statusPanel .status { text-align: center; font-size: 60px; }
+div.panel.statusPanel.ok .status:after { content: '\25B2'; color: #80bf40; }
+div.panel.statusPanel.warning .status:after { content: '\25BC'; color: #bf9f40; }
+div.panel.statusPanel.error .status:after { content: '\25BC'; color: #bf4040; }
+div.panel.statusPanel.unknown .status:after { content: '?'; }
 div.panel.rssMediaPanel .slide img { height: 98%; max-height: 98%; max-width: 98%; margin: auto; display: block; }
 
 /** Colours */
