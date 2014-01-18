@@ -5,6 +5,15 @@ div.panel {
 	background-color: $dark1;
 	border-radius: 5px;
 
+	.title {
+		padding: 3px;
+		text-align: center;
+		font-weight: bold;
+		a {
+			color: $light1;
+		}
+	}
+
 	&.slides{
 		overflow: hidden;
 
@@ -15,14 +24,6 @@ div.panel {
 				margin-right: auto;
 				display: block;
 				height: auto;
-			}
-			.title {
-				padding: 3px;
-				text-align: center;
-				font-weight: bold;
-				a {
-					color: $light1;
-				}
 			}
 		}
 	}
