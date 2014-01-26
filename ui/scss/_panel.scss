@@ -146,9 +146,10 @@ div.panel {
 		text-align: center;
 	}
 
-	&.plainTextPanel {
-		>div.content {
-			white-space: pre-wrap;
+	&.HTMLPanel {
+		>div.content[contentEditable=true]:empty:before{
+			content: 'Your text here';
+			font-style:italic;
 		}
 	}
 
