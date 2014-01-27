@@ -36,7 +36,6 @@ div.panel {
 		}
 
 		height: inherit;
-		overflow: hidden;
 	}
 
 	a.move-panel {
@@ -138,6 +137,10 @@ div.panel {
 			}
 		}
 
+	}
+
+	&.view {
+		overflow: hidden;
 	}
 
 	.clock {
