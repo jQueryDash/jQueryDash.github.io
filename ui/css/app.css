@@ -1,10 +1,14 @@
 /** Colours */
-button, .button, .ui-dialog .ui-dialog-titlebar-close, .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button { cursor: pointer; padding: 2px 5px 2px 5px; background-color: #6a6a6a; border: 1px solid #6a6a6a; color: #222222; font-weight: bold; text-align: center; }
-button:hover, .button:hover, .ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button:hover { background-color: #2c2c2c; color: #6a6a6a; }
+button, .button, #container.manage #text-controls a, .ui-dialog .ui-dialog-titlebar-close, .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button { cursor: pointer; padding: 2px 5px 2px 5px; background-color: #6a6a6a; border: 1px solid #6a6a6a; color: #222222; font-weight: bold; text-align: center; }
+button:hover, .button:hover, #container.manage #text-controls a:hover, .ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button:hover { background-color: #2c2c2c; color: #6a6a6a; }
 
 html { font-family: sans-serif; }
 
 body { padding: 0; background-color: #2c2c2c; color: #6a6a6a; }
+
+@font-face { font-family: 'FontAwesome'; src: url("fontawesome-webfont.woff"); font-weight: normal; font-style: normal; }
+
+.fa { font-family: FontAwesome; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
 .above-all-overlay { z-index: 4; }
 
@@ -24,21 +28,34 @@ body { padding: 0; background-color: #2c2c2c; color: #6a6a6a; }
 #container.manage { border: 1px solid #6a6a6a; border-left: 0; background-image: url("../images/grid.png"); }
 #container.manage .add-panel, #container.manage .view-panels, #container.manage .settings { display: inline-block; }
 #container.manage .edit-panels { display: none; }
-#container.manage #editControls { position: absolute; width: 100%; text-align: center; padding: 5px; margin: 5px; z-index: 10000; }
-#container.manage #editControls a:link { text-decoration: none; }
-#container.manage #editControls a:visited { text-decoration: none; }
-#container.manage #editControls a:hover { text-decoration: none; }
-#container.manage #editControls a:active { text-decoration: none; }
-#container.manage #editControls a { color: silver; background-color: black; padding: 5px; border: 1px solid silver; border-radius: 5px; width: 1em; }
+#container.manage #text-controls { text-align: center; display: block; margin-left: auto; margin-right: auto; position: relative; }
+#container.manage #text-controls a { padding: 5px !important; }
+#container.manage #text-controls a:link, #container.manage #text-controls a:visited, #container.manage #text-controls a:hover { text-decoration: none; }
+#container.manage #text-controls a.undo:before { content: "\f0e2"; }
+#container.manage #text-controls a.redo:before { content: "\f01e"; }
+#container.manage #text-controls a.bold:before { content: "\f032"; }
+#container.manage #text-controls a.italic:before { content: "\f033"; }
+#container.manage #text-controls a.underline:before { content: "\f0cd"; }
+#container.manage #text-controls a.strikeThrough:before { content: "\f0cc"; }
+#container.manage #text-controls a.justifyLeft:before { content: "\f036"; }
+#container.manage #text-controls a.justifyCenter:before { content: "\f037"; }
+#container.manage #text-controls a.justifyRight:before { content: "\f038"; }
+#container.manage #text-controls a.justifyFull:before { content: "\f039"; }
+#container.manage #text-controls a.indent:before { content: "\f03c"; }
+#container.manage #text-controls a.outdent:before { content: "\f03b"; }
+#container.manage #text-controls a.insertUnorderedList:before { content: "\f0ca"; }
+#container.manage #text-controls a.insertOrderedList:before { content: "\f0cb"; }
+#container.manage #text-controls a.subscript:before { content: "\f12c"; }
+#container.manage #text-controls a.superscript:before { content: "\f12b"; }
 
 .mega-warning { color: #ffaaaa; background-color: #dd0000; border-color: #ff0000; display: block; padding: 10px; width: 96%; margin: 2%; }
 .mega-warning:hover { color: #ffffff; background-color: #ff0000; border-color: #dd0000; }
 
 /** Colours */
-button, .button, .ui-dialog .ui-dialog-titlebar-close, .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button { cursor: pointer; padding: 2px 5px 2px 5px; background-color: #6a6a6a; border: 1px solid #6a6a6a; color: #222222; font-weight: bold; text-align: center; }
-button:hover, .button:hover, .ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button:hover { background-color: #2c2c2c; color: #6a6a6a; }
+button, .button, #container.manage #text-controls a, .ui-dialog .ui-dialog-titlebar-close, .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button { cursor: pointer; padding: 2px 5px 2px 5px; background-color: #6a6a6a; border: 1px solid #6a6a6a; color: #222222; font-weight: bold; text-align: center; }
+button:hover, .button:hover, #container.manage #text-controls a:hover, .ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button:hover { background-color: #2c2c2c; color: #6a6a6a; }
 
-div.panel { box-shadow: 0 0 1px 1px #6a6a6a inset; background-color: #222222; border-radius: 5px; /** jQuery UI Resizable */ }
+div.panel { box-shadow: 0 0 0 1px #6a6a6a inset; background-color: #222222; border-radius: 5px; /** jQuery UI Resizable */ }
 div.panel .title { padding: 3px; text-align: center; font-weight: bold; }
 div.panel .title a { color: #6a6a6a; }
 div.panel.slides { overflow: hidden; }
@@ -54,12 +71,12 @@ div.panel.ui-resizable .ui-resizable-handle.ui-resizable-w { cursor: w-resize; w
 div.panel.ui-resizable .ui-resizable-handle.ui-resizable-se { cursor: se-resize; width: 12px; height: 12px; right: 1px; bottom: 1px; }
 div.panel.ui-resizable .ui-resizable-handle.ui-resizable-sw { cursor: sw-resize; width: 9px; height: 9px; left: -5px; bottom: -5px; }
 div.panel.ui-resizable .ui-resizable-handle.ui-resizable-nw { cursor: nw-resize; width: 9px; height: 9px; left: -5px; top: -5px; }
-div.panel.edit > div.content { height: 90%; overflow: auto; }
-div.panel.edit > div.content label:first-child { padding-top: 20px; }
+div.panel.edit { height: 100%; padding: 1px; overflow-x: hidden; overflow-y: auto; }
+div.panel.edit > div.content { padding-top: 20px; }
 div.panel.edit > div.content label { display: block; clear: both; width: 95%; margin-left: auto; margin-right: auto; }
 div.panel.edit > div.content label select, div.panel.edit > div.content label input { float: right; width: 45%; }
 div.panel .clock { margin-left: auto; margin-right: auto; text-align: center; }
-div.panel.plainTextPanel > div.content { white-space: pre-wrap; }
+div.panel.tPanel > div.content[contentEditable=true]:empty:before { content: 'Your text here'; font-style: italic; }
 div.panel.statusPanel .status { text-align: center; font-size: 60px; }
 div.panel.statusPanel.ok .status:after { content: '\25B2'; color: #80bf40; }
 div.panel.statusPanel.warning .status:after { content: '\25BC'; color: #bf9f40; }
@@ -68,8 +85,8 @@ div.panel.statusPanel.unknown .status:after { content: '?'; }
 div.panel.rssMediaPanel .slide img { height: 98%; max-height: 98%; max-width: 98%; margin: auto; display: block; }
 
 /** Colours */
-button, .button, .ui-dialog .ui-dialog-titlebar-close, .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button { cursor: pointer; padding: 2px 5px 2px 5px; background-color: #6a6a6a; border: 1px solid #6a6a6a; color: #222222; font-weight: bold; text-align: center; }
-button:hover, .button:hover, .ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button:hover { background-color: #2c2c2c; color: #6a6a6a; }
+button, .button, #container.manage #text-controls a, .ui-dialog .ui-dialog-titlebar-close, .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button { cursor: pointer; padding: 2px 5px 2px 5px; background-color: #6a6a6a; border: 1px solid #6a6a6a; color: #222222; font-weight: bold; text-align: center; }
+button:hover, .button:hover, #container.manage #text-controls a:hover, .ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button:hover { background-color: #2c2c2c; color: #6a6a6a; }
 
 .ui-dialog { position: absolute; top: 0; left: 0; padding: .2em; padding-bottom: 0px; outline: 0; background-color: #222222; border: 1px solid #6a6a6a; border-radius: 3; }
 .ui-dialog .ui-dialog-titlebar { padding: .4em 1em; position: relative; }
@@ -78,9 +95,9 @@ button:hover, .button:hover, .ui-dialog .ui-dialog-titlebar-close:hover, .ui-dia
 .ui-dialog .ui-dialog-titlebar-close span { display: none; }
 .ui-dialog .ui-dialog-titlebar-close:after { content: 'X'; }
 .ui-dialog .ui-dialog-content label { padding-left: 20px; display: block; }
-.ui-dialog .ui-dialog-content label input, .ui-dialog .ui-dialog-content label button, .ui-dialog .ui-dialog-content label .button, .ui-dialog .ui-dialog-content label .ui-dialog-titlebar-close, .ui-dialog .ui-dialog-content label .ui-dialog-buttonpane .ui-dialog-buttonset button, .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset .ui-dialog-content label button { width: 200px; margin-left: 50px; }
+.ui-dialog .ui-dialog-content label input, .ui-dialog .ui-dialog-content label button, .ui-dialog .ui-dialog-content label .button, .ui-dialog .ui-dialog-content label #container.manage #text-controls a, #container.manage #text-controls .ui-dialog .ui-dialog-content label a, .ui-dialog .ui-dialog-content label .ui-dialog-titlebar-close, .ui-dialog .ui-dialog-content label .ui-dialog-buttonpane .ui-dialog-buttonset button, .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset .ui-dialog-content label button { width: 200px; margin-left: 50px; }
 .ui-dialog .ui-dialog-buttonpane { border-width: 1px 0 0 0; background-image: none; margin-top: 10px; text-align: center; }
-.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset .button, .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset .ui-dialog-titlebar-close, .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button { margin: 0; border-top-left-radius: 3px; border-top-right-radius: 3px; }
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset .button, .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset #container.manage #text-controls a, #container.manage #text-controls .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset a, .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset .ui-dialog-titlebar-close, .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button { margin: 0; border-top-left-radius: 3px; border-top-right-radius: 3px; }
 .ui-dialog .ui-resizable-se { width: 12px; height: 12px; right: -5px; bottom: -5px; background-position: 16px 16px; }
 
 .ui-draggable .ui-dialog-titlebar { cursor: move; }

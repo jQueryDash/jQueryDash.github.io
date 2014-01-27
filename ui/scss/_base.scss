@@ -10,6 +10,20 @@ body {
 	color: $light1;
 }
 
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('fontawesome-webfont.woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+//noinspection CssUnknownProperty
+.fa {
+	font-family: FontAwesome;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
 .above-all-overlay {
 	z-index: 4;
 }
@@ -83,33 +97,69 @@ body {
 		display: none;
 	}
 
-	#editControls {
-		position: absolute;
-		width: 100%;
+	#text-controls {
 		text-align: center;
-		padding: 5px;
-		margin: 5px;
-		z-index: 10000;
+		display: block;
+		margin-left:auto;
+		margin-right:auto;
+		position: relative;
 
-		a:link {
-			text-decoration: none;
-		}
-		a:visited {
-			text-decoration: none;
-		}
-		a:hover {
-			text-decoration: none;
-		}
-		a:active {
-			text-decoration: none;
-		}
 		a {
-			color: silver;
-			background-color: black;
-			padding: 5px;
-			border: 1px solid silver;
-			border-radius: 5px;
-			width: 1em;
+			@extend button;
+			padding: 5px !important;
+
+			&:link, &:visited, &:hover {
+				text-decoration: none;
+			}
+
+			&.undo:before {
+				content: "\f0e2";
+			}
+			&.redo:before {
+				content: "\f01e";
+			}
+			&.bold:before {
+				content: "\f032";
+			}
+			&.italic:before {
+				content: "\f033";
+			}
+			&.underline:before {
+				content: "\f0cd";
+			}
+			&.strikeThrough:before {
+				content: "\f0cc";
+			}
+			&.justifyLeft:before {
+				content: "\f036";
+			}
+			&.justifyCenter:before {
+				content: "\f037";
+			}
+			&.justifyRight:before {
+				content: "\f038";
+			}
+			&.justifyFull:before {
+				content: "\f039";
+			}
+			&.indent:before {
+				content: "\f03c";
+			}
+			&.outdent:before {
+				content: "\f03b";
+			}
+			&.insertUnorderedList:before {
+				content: "\f0ca";
+			}
+			&.insertOrderedList:before {
+				content: "\f0cb";
+			}
+			&.subscript:before {
+				content: "\f12c";
+			}
+			&.superscript:before {
+				content: "\f12b";
+			}
 		}
 	}
 }
