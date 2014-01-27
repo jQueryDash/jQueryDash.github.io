@@ -71,7 +71,7 @@ div.panel.ui-resizable .ui-resizable-handle.ui-resizable-w { cursor: w-resize; w
 div.panel.ui-resizable .ui-resizable-handle.ui-resizable-se { cursor: se-resize; width: 12px; height: 12px; right: 1px; bottom: 1px; }
 div.panel.ui-resizable .ui-resizable-handle.ui-resizable-sw { cursor: sw-resize; width: 9px; height: 9px; left: -5px; bottom: -5px; }
 div.panel.ui-resizable .ui-resizable-handle.ui-resizable-nw { cursor: nw-resize; width: 9px; height: 9px; left: -5px; top: -5px; }
-div.panel.edit { height: 100%; padding: 1px; overflow-x: hidden; overflow-y: auto; }
+div.panel.edit { height: 100%; overflow-x: hidden; overflow-y: auto; }
 div.panel.edit > div.content { padding-top: 20px; }
 div.panel.edit > div.content label { display: block; clear: both; width: 95%; margin-left: auto; margin-right: auto; }
 div.panel.edit > div.content label select, div.panel.edit > div.content label input { float: right; width: 45%; }
