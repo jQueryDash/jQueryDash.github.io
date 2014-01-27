@@ -60,7 +60,7 @@ div.panel .title { padding: 3px; text-align: center; font-weight: bold; }
 div.panel .title a { color: #6a6a6a; }
 div.panel.slides { overflow: hidden; }
 div.panel.slides .slide img { max-height: 50%; margin-left: auto; margin-right: auto; display: block; height: auto; }
-div.panel > div.content { margin: 4px; height: inherit; }
+div.panel > div.content { margin: 4px; }
 div.panel > div.content .slide { float: left; }
 div.panel a.move-panel { font-size: 60px; line-height: 17px; cursor: move; height: 28px; overflow: hidden; display: inline-block; position: absolute; top: 0; left: 0; }
 div.panel.ui-resizable .ui-resizable-handle { position: absolute; font-size: 0px; display: block; }
