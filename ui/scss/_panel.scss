@@ -146,7 +146,7 @@ div.panel {
 		text-align: center;
 	}
 
-	&.HTMLPanel {
+	&.textPanel {
 		>div.content[contentEditable=true]:empty:before{
 			content: 'Your text here';
 			font-style:italic;
