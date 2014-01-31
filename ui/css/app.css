@@ -73,7 +73,7 @@ div.panel.ui-resizable .ui-resizable-handle.ui-resizable-sw { cursor: sw-resize;
 div.panel.ui-resizable .ui-resizable-handle.ui-resizable-nw { cursor: nw-resize; width: 9px; height: 9px; left: -5px; top: -5px; }
 div.panel.edit { height: 100%; overflow-x: hidden; overflow-y: auto; }
 div.panel.edit a.open-edit-dialog { display: none; }
-div.panel.edit.dialog-edit a.open-edit-dialog { display: block; text-align: center; padding-top: 30px; cursor: pointer; }
+div.panel.edit.dialog-edit a.open-edit-dialog { display: block; text-align: center; padding-top: 30px; cursor: pointer; height: 100%; }
 div.panel.edit.dialog-edit > div.content { display: none; }
 div.panel.edit > div.content { padding-top: 20px; }
 div.panel.edit > div.content label { display: block; clear: both; margin-left: auto; margin-right: auto; }
