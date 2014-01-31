@@ -118,7 +118,25 @@ div.panel {
 		overflow-x: hidden;
 		overflow-y: auto;
 
-		>div.content {
+		a.open-edit-dialog {
+			display: none;
+		}
+
+		&.dialog-edit {
+
+			a.open-edit-dialog {
+				display: block;
+				text-align: center;
+				padding-top: 30px;
+				cursor: pointer;
+			}
+
+			> div.content {
+				display: none;
+			}
+		}
+
+		> div.content {
 			padding-top: 20px;
 			label {
 				display: block;
