@@ -76,7 +76,7 @@ div.panel.edit a.open-edit-dialog { display: none; }
 div.panel.edit.dialog-edit a.open-edit-dialog { display: block; text-align: center; padding-top: 30px; cursor: pointer; }
 div.panel.edit.dialog-edit > div.content { display: none; }
 div.panel.edit > div.content { padding-top: 20px; }
-div.panel.edit > div.content label { display: block; clear: both; width: 95%; margin-left: auto; margin-right: auto; }
+div.panel.edit > div.content label { display: block; clear: both; margin-left: auto; margin-right: auto; }
 div.panel.edit > div.content label select, div.panel.edit > div.content label input { float: right; width: 45%; }
 div.panel.edit > div.content label textarea { width: 100%; height: 80%; }
 div.panel.view { overflow: hidden; }
@@ -99,7 +99,7 @@ button:hover, .button:hover, #container.manage #text-controls a:hover, .ui-dialo
 .ui-dialog .ui-dialog-titlebar-close { position: absolute; right: -4px; top: -4px; width: 25px; height: 25px; border-bottom-left-radius: 3px; border-top-right-radius: 3px; }
 .ui-dialog .ui-dialog-titlebar-close span { display: none; }
 .ui-dialog .ui-dialog-titlebar-close:after { content: 'X'; }
-.ui-dialog .ui-dialog-content label { display: block; clear: both; width: 95%; margin-left: auto; margin-right: auto; }
+.ui-dialog .ui-dialog-content label { display: block; clear: both; margin-left: auto; margin-right: auto; }
 .ui-dialog .ui-dialog-content label select, .ui-dialog .ui-dialog-content label input, .ui-dialog .ui-dialog-content label button, .ui-dialog .ui-dialog-content label .button, .ui-dialog .ui-dialog-content label #container.manage #text-controls a, #container.manage #text-controls .ui-dialog .ui-dialog-content label a, .ui-dialog .ui-dialog-content label .ui-dialog-titlebar-close, .ui-dialog .ui-dialog-content label .ui-dialog-buttonpane .ui-dialog-buttonset button, .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset .ui-dialog-content label button { float: right; width: 45%; }
 .ui-dialog .ui-dialog-buttonpane { border-width: 1px 0 0 0; background-image: none; margin-top: 10px; text-align: center; }
 .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset .button, .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset #container.manage #text-controls a, #container.manage #text-controls .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset a, .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset .ui-dialog-titlebar-close, .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button { margin: 0; border-top-left-radius: 3px; border-top-right-radius: 3px; }
