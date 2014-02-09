@@ -85,6 +85,7 @@ div.panel.statusPanel.warning .status:after { content: '\25BC'; color: #bf9f40; 
 div.panel.statusPanel.error .status:after { content: '\25BC'; color: #bf4040; }
 div.panel.statusPanel.unknown .status:after { content: '?'; }
 div.panel.rssMediaPanel .slide img { height: 98%; max-height: 98%; max-width: 98%; margin: auto; display: block; }
+div.panel.iceCreamPanel { text-align: center; }
 
 /** Colours */
 button, .button, #container.manage #text-controls a, .ui-dialog .ui-dialog-titlebar-close, .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button { cursor: pointer; padding: 2px 5px 2px 5px; background-color: #6a6a6a; border: 1px solid #6a6a6a; color: #222222; font-weight: bold; text-align: center; }
