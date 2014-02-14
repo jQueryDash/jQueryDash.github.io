@@ -43,11 +43,13 @@
 	.ui-dialog-content {
 
 		label {
-			padding-left: 20px;
 			display: block;
-			input, button {
-				width: 200px;
-				margin-left: 50px;
+			clear: both;
+			margin-left: auto;
+			margin-right: auto;
+			select, input, button {
+				float: right;
+				width: 45%;
 			}
 		}
 
