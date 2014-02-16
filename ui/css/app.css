@@ -59,7 +59,7 @@ div.panel { box-shadow: 0 0 0 1px #6a6a6a inset; background-color: #222222; bord
 div.panel .title { padding: 3px; text-align: center; font-weight: bold; }
 div.panel .title a { color: #6a6a6a; }
 div.panel.slides { overflow: hidden; }
-div.panel.slides .slide img { max-height: 50%; margin-left: auto; margin-right: auto; display: block; height: auto; }
+div.panel.slides .slide img { max-width: 98%; max-height: 50%; margin-left: auto; margin-right: auto; display: block; height: auto; }
 div.panel > div.content { margin: 4px; }
 div.panel > div.content .slide { float: left; }
 div.panel a.move-panel { font-size: 60px; line-height: 17px; cursor: move; height: 28px; overflow: hidden; display: inline-block; position: absolute; top: 0; left: 0; }
@@ -88,6 +88,7 @@ div.panel.statusPanel.warning .status:after { content: '\25BC'; color: #bf9f40; 
 div.panel.statusPanel.error .status:after { content: '\25BC'; color: #bf4040; }
 div.panel.statusPanel.unknown .status:after { content: '?'; }
 div.panel.rssMediaPanel .slide img { height: 98%; max-height: 98%; max-width: 98%; margin: auto; display: block; }
+div.panel.iceCreamPanel { text-align: center; }
 
 /** Colours */
 button, .button, #container.manage #text-controls a, .ui-dialog .ui-dialog-titlebar-close, .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button { cursor: pointer; padding: 2px 5px 2px 5px; background-color: #6a6a6a; border: 1px solid #6a6a6a; color: #222222; font-weight: bold; text-align: center; }
