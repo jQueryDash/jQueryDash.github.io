@@ -30,10 +30,70 @@ body {
 }
 
 //noinspection CssUnknownProperty
-.weather {
-	font-family: Weather;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+.weatherPanel {
+	text-transform: capitalize;
+	font-size: 2em;
+	text-align: center;
+	padding: 20px;
+
+	#weather-temp-icon {
+		font-size: 1.5em;
+
+		div {
+			display: inline-block;
+			margin-right: 20px;
+		}
+	}
+
+	#weather-description {
+		clear: left;
+	}
+
+	.weather {
+		font-family: Weather;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+
+		&.clear:before {
+			content: "\f00d";
+		}
+
+		&.few-clouds:before {
+			content: "\f00c";
+		}
+
+		&.scattered-clouds:before {
+			content: "\f002";
+		}
+
+		&.broken-clouds:before {
+			content: "\f013";
+		}
+
+		&.shower-rain:before {
+			content: "\f009";
+		}
+
+		&.rain:before {
+			content: "\f008";
+		}
+
+		&.thunderstorm:before {
+			content: "\f010";
+		}
+
+		&.snow:before {
+			content: "\f00a";
+		}
+
+		&.mist:before {
+			content: "\f003";
+		}
+
+		&.temp-unit:before {
+			content: "\f042";
+		}
+	}
 }
 
 .above-all-overlay {
