@@ -8,7 +8,25 @@ body { padding: 0; background-color: #2c2c2c; color: #6a6a6a; }
 
 @font-face { font-family: 'FontAwesome'; src: url("fontawesome-webfont.woff"); font-weight: normal; font-style: normal; }
 
+@font-face { font-family: 'Weather'; src: url("weathericons-regular-webfont.woff"); }
+
 .fa { font-family: FontAwesome; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+.weatherPanel { text-transform: capitalize; font-size: 2em; text-align: center; padding: 20px; }
+.weatherPanel #weather-temp-icon { font-size: 1.5em; }
+.weatherPanel #weather-temp-icon div { display: inline-block; margin-right: 20px; }
+.weatherPanel #weather-description { clear: left; }
+.weatherPanel .weather { font-family: Weather; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.weatherPanel .weather.clear:before { content: "\f00d"; }
+.weatherPanel .weather.few-clouds:before { content: "\f00c"; }
+.weatherPanel .weather.scattered-clouds:before { content: "\f002"; }
+.weatherPanel .weather.broken-clouds:before { content: "\f013"; }
+.weatherPanel .weather.shower-rain:before { content: "\f009"; }
+.weatherPanel .weather.rain:before { content: "\f008"; }
+.weatherPanel .weather.thunderstorm:before { content: "\f010"; }
+.weatherPanel .weather.snow:before { content: "\f00a"; }
+.weatherPanel .weather.mist:before { content: "\f003"; }
+.weatherPanel .weather.temp-unit:before { content: "\f042"; }
 
 .above-all-overlay { z-index: 4; }
 
