@@ -37,6 +37,7 @@ $( function()
 			'statusWebPanel': 'Status (Web)',
 			'htmlPanel': 'HTML',
 			'twitterPanel': 'Twitter',
+			'weatherPanel': 'Weather',
 			'iceCreamPanel': 'Ice Cream Status'
 		},
 

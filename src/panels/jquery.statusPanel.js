@@ -33,9 +33,18 @@ $( function()
 			return {'additionalPanelClass': this.options.additionalPanelClass + ' statusPanel'};
 		},
 
+		/**
+		 *
+		 * @returns {Boolean}
+		 */
 		refreshContent: function()
 		{
-			this.setStatus( this.options.status );
+			var retVal = this._super();
+			if( retVal )
+			{
+				this.setStatus( this.options.status );
+			}
+			return retVal;
 		},
 
 		_destroyViewPanel: function()

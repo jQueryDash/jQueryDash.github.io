@@ -7,6 +7,8 @@ body { padding: 0; background-color: #2c2c2c; color: #6a6a6a; }
 
 @font-face { font-family: 'FontAwesome'; src: url("fontawesome-webfont.woff"); font-weight: normal; font-style: normal; }
 
+@font-face { font-family: 'Weather'; src: url("weathericons-regular-webfont.woff"); }
+
 .fa { font-family: FontAwesome; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
 .above-all-overlay { z-index: 4; }
@@ -87,6 +89,24 @@ div.panel.statusPanel.error .status:after { content: '\25BC'; color: #bf4040; }
 div.panel.statusPanel.unknown .status:after { content: '?'; }
 div.panel.rssMediaPanel .slide img { height: 98%; max-height: 98%; max-width: 98%; margin: auto; display: block; }
 div.panel.iceCreamPanel { text-align: center; }
+div.panel.weatherPanel > .content div { display: inline-block; margin: 1%; }
+div.panel.weatherPanel.view { text-transform: capitalize; font-size: 2em; text-align: center; }
+div.panel.weatherPanel .temp:after { content: '\2103'; }
+div.panel.weatherPanel .temp, div.panel.weatherPanel .icon { width: 23%; font-size: 2em; }
+div.panel.weatherPanel .temp { float: left; }
+div.panel.weatherPanel .title { clear: both; }
+div.panel.weatherPanel .title, div.panel.weatherPanel .description, div.panel.weatherPanel .wind { width: 45%; font-size: 0.5em; }
+div.panel.weatherPanel .icon { float: right; font-family: Weather; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+div.panel.weatherPanel .icon.clear:before { content: "\f00d"; }
+div.panel.weatherPanel .icon.few-clouds:before { content: "\f00c"; }
+div.panel.weatherPanel .icon.scattered-clouds:before { content: "\f002"; }
+div.panel.weatherPanel .icon.broken-clouds:before { content: "\f013"; }
+div.panel.weatherPanel .icon.shower-rain:before { content: "\f009"; }
+div.panel.weatherPanel .icon.rain:before { content: "\f008"; }
+div.panel.weatherPanel .icon.thunderstorm:before { content: "\f010"; }
+div.panel.weatherPanel .icon.snow:before { content: "\f00a"; }
+div.panel.weatherPanel .icon.mist:before { content: "\f003"; }
+div.panel.weatherPanel .icon.temp-unit:before { content: "\f042"; }
 
 button, .button, #container.manage #text-controls a, .ui-dialog .ui-dialog-titlebar-close, .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button { cursor: pointer; padding: 2px 5px 2px 5px; background-color: #6a6a6a; border: 1px solid #6a6a6a; color: #222222; font-weight: bold; text-align: center; }
 button:hover, .button:hover, #container.manage #text-controls a:hover, .ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button:hover { background-color: #2c2c2c; color: #6a6a6a; }

@@ -210,4 +210,87 @@ div.panel {
 	&.iceCreamPanel {
 		text-align: center;
 	}
+
+	&.weatherPanel {
+		>.content div {
+			display: inline-block;
+			margin: 1%;
+		}
+
+		&.view{
+			text-transform: capitalize;
+			font-size: 2em;
+			text-align: center;
+		}
+
+		.temp:after {
+			content: '\2103';
+		}
+
+		.temp, .icon {
+			width: 23%;
+			font-size: 2em;
+		}
+
+		.temp {
+			float: left;
+		}
+
+		.title {
+			clear: both;
+		}
+
+		.title, .description, .wind {
+			width: 45%;
+			font-size: 0.5em;
+		}
+
+		//noinspection CssUnknownProperty
+		.icon {
+			float: right;
+			font-family: Weather;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+
+			&.clear:before {
+				content: "\f00d";
+			}
+
+			&.few-clouds:before {
+				content: "\f00c";
+			}
+
+			&.scattered-clouds:before {
+				content: "\f002";
+			}
+
+			&.broken-clouds:before {
+				content: "\f013";
+			}
+
+			&.shower-rain:before {
+				content: "\f009";
+			}
+
+			&.rain:before {
+				content: "\f008";
+			}
+
+			&.thunderstorm:before {
+				content: "\f010";
+			}
+
+			&.snow:before {
+				content: "\f00a";
+			}
+
+			&.mist:before {
+				content: "\f003";
+			}
+
+			&.temp-unit:before {
+				content: "\f042";
+			}
+		}
+	}
 }

@@ -37,7 +37,8 @@ $( function()
 				h: 150,
 				w: 150
 			},
-			additionalPanelClass: 'panel'
+			additionalPanelClass: 'panel',
+			contentHashed: null
 		},
 
 		/**
@@ -331,6 +332,8 @@ $( function()
 			{
 				this.element.removeClass( 'refresh' );
 			}
+
+			this.options.contentHashed = null;
 		},
 
 		/**
@@ -612,7 +615,7 @@ $( function()
 		 *
 		 * @param {string} url
 		 * @param {string} contentType
-		 * @param {function} onReadyStateChange
+		 * @param {function|{}} onReadyStateChange
 		 * @param {boolean} [enableCORSProxy=false]
 		 */
 		sendGetRequest: function( url, contentType, onReadyStateChange, enableCORSProxy )
@@ -644,7 +647,24 @@ $( function()
 				}
 				else
 				{
-					onReadyStateChange( this );
+					// Check for onReadyStateChange being callable, then call it
+					if( onReadyStateChange instanceof Function )
+					{
+						onReadyStateChange( this );
+					}
+					else
+					{
+						// Check for onReadyStateChange being an object, having callable properties for corresponding XMLHttpRequest ready states
+						if( typeof onReadyStateChange === "object" && onReadyStateChange[ this.readyState ] instanceof Function )
+						{
+							onReadyStateChange[ this.readyState ]( this );
+						}
+					}
+
+					if( this.readyState === XMLHttpRequest.DONE )
+					{
+						self.options.currentRequest = null;
+					}
 				}
 			};
 			request.open(

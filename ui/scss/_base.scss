@@ -17,6 +17,11 @@ body {
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Weather';
+	src: url( 'weathericons-regular-webfont.woff' );
+}
+
 //noinspection CssUnknownProperty
 .fa {
 	font-family: FontAwesome;
